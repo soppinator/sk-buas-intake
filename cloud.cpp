@@ -65,7 +65,10 @@ void cloud::decreaseScore(int* score)
 {
     if (!counted)
     {
-        *score -= 2; // subtract score by 1 ONCE if bird is in cloud
+        if (*score <= 2) // make it so you can't get a negative score
+            *score = 0;
+        else // subtract score by 2 ONCE if bird is in cloud
+        *score -= 2;
         counted = true;
     }
 }
