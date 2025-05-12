@@ -333,7 +333,7 @@ namespace Tmpl8
 		}
 		if (difficulty == 3)
 		{
-			deltaTime = deltaTime * 2.5f;
+			deltaTime = deltaTime * 2.75f;
 		}
 		// animate bird
 		Sprite& mySprite = myBird.getSprite();
