@@ -54,10 +54,11 @@ namespace Tmpl8 {
 
     private:
         // game state functions
-        void DoWelcome(float deltaTime);
-        void DoSelectBird(float deltaTime);
-        void DoRunning(float deltaTime);
-        void DoGameOver(float deltaTime);
+        void DoWelcome(float deltaTime); // intro and credits
+        void DoSelectBird(float deltaTime); // display birds and set difficulty based on chosen bird
+        void DoRunning(float deltaTime); // the game itself; the bird flies, clouds and trees move, collisions are checked, and points are added or removed
+        void DoGameOver(float deltaTime); // display score and high score, show options to replay / reselect / exit
+        
         
         Surface* screen;
         bool space = false;
