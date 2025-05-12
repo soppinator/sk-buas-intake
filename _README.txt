@@ -46,7 +46,7 @@ AKNOWLEDGEMENTS:
 - Robert Grigg's C++ Fast Track for Games Programming tutorial
 - Mike Dawson's Beginning C++ Through Game Programming (2007) book
 - "Let's Make Games"' (YouTube) Creating and Adding Assets video tutorial
-- Special thank you to Jeremiah VanOosten
+- Special thank you to Jeremiah VanOosten and those in the 3dgep.com Discord server
 
 KNOWN ISSUES:
 - No known issues as of 5/12/25 (M/D/Y) 
