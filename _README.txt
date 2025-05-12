@@ -7,6 +7,24 @@ Instead of making a 1:1 copy of Flappy Bird, I wanted to use only the concept as
 The game includes a welcome screen, difficulty selection screen, gameplay with different speeds and a score, and a game over screen.
 The art and animation was done completely by me, using Krita as a drawing program.
 
+There are 3 difficulties which affect the gameplay in different ways.
+EASY:
+- Bird is a Chickadee
+- Game speed is slow
+- Being in a cloud only temporarily halves the speed
+MEDIUM:
+- Bird is a Puffin
+- Game speed is faster
+- Being in a cloud temporarily halves the speed AND removes 2 points
+HARD:
+- Bird is an Osprey
+- Game speed is very fast
+- Hitting a cloud ends the game
+
+IN ALL DIFFICULTIES:
+- Hitting a tree ends the game
+- Successfully flying over a tree adds a point
+
 INSTALLATION:
 Install the same way as the template; 
 - extract zip into new folder/folder of choice,
