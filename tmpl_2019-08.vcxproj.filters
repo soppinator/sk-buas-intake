@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="surface.cpp">
+      <Filter>template code</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>template code</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="cloud.cpp" />
+    <ClCompile Include="Bird.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
+    <ClInclude Include="surface.h">
+      <Filter>template code</Filter>
+    </ClInclude>
+    <ClInclude Include="template.h">
+      <Filter>template code</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.hpp" />
+    <ClInclude Include="cloud.hpp" />
+    <ClInclude Include="Bird.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="template code">
+      <UniqueIdentifier>{bf32dd6e-4be7-4889-8ac6-49e7ee163c40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="_readme.txt">
+      <Filter>template code</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\static-background.png" />
+    <Image Include="assets\treelg.png" />
+    <Image Include="assets\treeme.png" />
+    <Image Include="assets\treesm.png" />
+    <Image Include="assets\osprey.tga" />
+    <Image Include="assets\cloud1.png" />
+    <Image Include="assets\faded-background.png" />
+    <Image Include="assets\gameover.png" />
+    <Image Include="assets\score.png" />
+    <Image Include="assets\welcome.png" />
+    <Image Include="assets\bluebird.tga" />
+    <Image Include="assets\ogcloud1.png" />
+    <Image Include="assets\chickadee.tga" />
+    <Image Include="assets\puffin.tga" />
+    <Image Include="assets\birds.png" />
+  </ItemGroup>
+</Project>
