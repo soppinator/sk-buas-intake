@@ -21,7 +21,7 @@ public:
 private:
 	float x = 0.0f;
 	float y = 0.0f;
-	float speed = 0.1f;
+	float speed = 300.0f;
 	bool counted = false;
 	Tmpl8::Sprite* sprite = nullptr;
 };
