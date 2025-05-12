@@ -23,7 +23,7 @@ public:
 private:
 	float x = 100.0f;
 	float y = 0.0f;
-	float speed = 0.1f;
+	float speed = 200.0f;
 	float halfspeed = speed / 100.0f;
 	Tmpl8::Sprite* sprite = nullptr;
 };
