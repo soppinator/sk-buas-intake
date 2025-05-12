@@ -23,6 +23,6 @@ private:
 	float x = 0.0f;
 	float y = 0.0f;
 	bool counted = false; // Set to true if the score has been applied.
-	float speed = 0.1f;
+	float speed = 450.0f;
 	Tmpl8::Sprite* sprite = nullptr;
 };
