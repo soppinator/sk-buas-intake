@@ -34,7 +34,7 @@ float cloudY, cloudX = ScreenWidth;
 const float  LGCLOUDWIDTH = 164.0f; // lg cloud length + width
 
 // BASE SPEEDS
-float birdBaseSpeed = 200.0f, cloudBaseSpeed = 400.0f, treeBaseSpeed = 450.0f; // speed value remains the same throughout the game, only deltaTime is changed
+float birdBaseSpeed = 200.0f, cloudBaseSpeed = 300.0f, treeBaseSpeed = 450.0f; // speed value remains the same throughout the game, only deltaTime is changed
 
 namespace Tmpl8
 {
