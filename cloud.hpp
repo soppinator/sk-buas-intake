@@ -16,7 +16,7 @@ public:
 
 	void draw(Tmpl8::Surface* surface);
 	void move(float deltaTime);
-	void decreaseScore(int* score); // decreases score by 1 if bird is inside cloud in medium difficulty
+	void decreaseScore(int* score); // decreases score by 2 if bird is inside cloud in medium difficulty
 
 private:
 	float x = 0.0f;
