@@ -172,7 +172,7 @@ namespace Tmpl8
 		{
 			float randNum = Rand(100.0f);
 			cloudX += (randNum + LGCLOUDWIDTH);
-			cloudY = Rand(ScreenHeight / 3.5f); // clouds will only spawn in the top 1/3 of the screen
+			cloudY = Rand(ScreenHeight / 3.2f); // clouds will only spawn in the top 1/3 of the screen
 			cloud.setPosition(cloudX, cloudY);
 		}
 	}
