@@ -61,14 +61,14 @@ void cloud::move(float deltaTime)
     }
 }
 
-void cloud::decreaseScore(int* score)
+void cloud::decreaseScore(int& score)
 {
     if (!counted)
     {
-        if (*score <= 2) // make it so you can't get a negative score
-            *score = 0;
+        if (score <= 2) // make it so you can't get a negative score
+            score = 0;
         else // subtract score by 2 ONCE if bird is in cloud
-        *score -= 2;
+        score -= 2;
         counted = true;
     }
 }

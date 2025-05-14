@@ -238,16 +238,16 @@
     <ClInclude Include="tree.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="_readme.txt" />
+    <Text Include="tmpl8_readme.txt" />
+    <Text Include="_README.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\birds.png" />
-    <Image Include="assets\bluebird.tga" />
     <Image Include="assets\chickadee.tga" />
-    <Image Include="assets\cloud1.png" />
+    <Image Include="assets\cloudsm.png" />
     <Image Include="assets\faded-background.png" />
     <Image Include="assets\gameover.png" />
-    <Image Include="assets\ogcloud1.png" />
+    <Image Include="assets\cloudlg.png" />
     <Image Include="assets\osprey.tga" />
     <Image Include="assets\puffin.tga" />
     <Image Include="assets\score.png" />

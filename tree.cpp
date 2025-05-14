@@ -59,11 +59,11 @@ void tree::move(float deltaTime)
     }
 }
 
-void tree::countScore(int* score)
+void tree::countScore(int& score)
 {
     if (x < 101.0f && !counted) // applies if tree passes by bird and only counts once
     {
-        *score += 1;
+        score += 1;
         counted = true;
     }
 }

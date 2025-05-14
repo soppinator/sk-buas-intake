@@ -40,7 +40,6 @@ namespace Tmpl8
 {
 	// ASSETS + SPRITES
 
-
 	// BIRDS
 	Sprite chickadeeSprite(new Surface("assets/chickadee.tga"), 3);
 	Sprite ospreySprite(new Surface("assets/osprey.tga"), 3);
@@ -77,8 +76,8 @@ namespace Tmpl8
 	};
 
 	// CLOUDS
-	Sprite cloudLg(new Surface("assets/ogcloud1.png"), 1);
-	Sprite cloudSm(new Surface("assets/cloud1.png"), 1);
+	Sprite cloudLg(new Surface("assets/cloudlg.png"), 1);
+	Sprite cloudSm(new Surface("assets/cloudsm.png"), 1);
 
 	const cloud smallCloud{ cloudX, cloudY, &cloudLg, cloudBaseSpeed };
 	const cloud largeCloud{ cloudX, cloudY, &cloudSm, cloudBaseSpeed };
@@ -265,7 +264,6 @@ namespace Tmpl8
 		fadedBG.Draw(screen, 0, 0);
 		welcomeBox.Draw(screen, 170, 100);
 
-
 		if (sKey)
 		{
 			state = State::SelectBird;
@@ -353,7 +351,7 @@ namespace Tmpl8
 			{
 				collision = true;
 				if (difficulty == 2) // in medium mode, bird hitting cloud removes a point
-					cloud.decreaseScore(&score);
+					cloud.decreaseScore(score);
 				break;
 			}
 		}
@@ -378,7 +376,7 @@ namespace Tmpl8
 		{
 			tree.setSpeed(treeBaseSpeed);
 			tree.move(deltaTime);
-			tree.countScore(&score); // adds 1 to score if the bird passes a tree
+			tree.countScore(score); // adds 1 to score if the bird passes a tree
 
 			if (CheckCollision(myBird.getSprite(), myBird.getX(), myBird.getY(), tree.getSprite(), tree.getX(), tree.getY()))
 				state = State::GameOver; // if bird hits tree; gameover
@@ -386,14 +384,14 @@ namespace Tmpl8
 
 		myBird.gravity(deltaTime); // bird is always being pulled down by gravity
 
- 	  // PLAYER INPUT (space) makes bird fly up
+ 		// PLAYER INPUT (space) makes bird fly up
 		if (space)
 		{
 			myBird.flap(deltaTime);
 			space = false;
 		}
 
-		// DRAW FUNCTIONS
+		// DRAW FUNCTIONS - in order of layers
 		background.Draw(screen, 0, 0);
 		
 		for (tree& tree : trees)
@@ -414,7 +412,6 @@ namespace Tmpl8
 		scoreCounter.Draw(screen, 0, 0);
 		std::string scoreStr = std::to_string(score); // take score and convert to string
 		screen->PrintScaled(scoreStr.c_str(), 90, 12, 3, 3, 0x5E6C44); // print score as string
-
 	}
 
 	void Game::DoGameOver(float deltaTime)

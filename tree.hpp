@@ -17,12 +17,12 @@ public:
 	void draw(Tmpl8::Surface* surface);
 
 	void move(float deltaTime);
-	void countScore(int* score); // every time the bird successfully flies over a tree, a point is added to the score
+	void countScore(int& score); // every time the bird successfully flies over a tree, a point is added to the score
 
 private:
 	float x = 0.0f;
 	float y = 0.0f;
-	bool counted = false; // Set to true if the score has been applied.
+	bool counted = false; // set to true if the score has been applied.
 	float speed = 450.0f;
 	Tmpl8::Sprite* sprite = nullptr;
 };

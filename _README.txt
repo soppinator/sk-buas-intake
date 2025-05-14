@@ -49,7 +49,8 @@ AKNOWLEDGEMENTS:
 - Special thank you to Jeremiah VanOosten and those in the 3dgep.com Discord server
 
 KNOWN ISSUES:
-- No known issues as of 5/12/25 (M/D/Y) 
+- Random cloud generation can make game too easy or too hard.
+- Trees may overlap after wrapping around.
 
 Version 2.26.0
 

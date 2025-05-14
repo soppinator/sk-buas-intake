@@ -59,7 +59,6 @@ namespace Tmpl8 {
         void DoRunning(float deltaTime); // the game itself; the bird flies, clouds and trees move, collisions are checked, and points are added or removed
         void DoGameOver(float deltaTime); // display score and high score, show options to replay / reselect / exit
         
-        
         Surface* screen;
         bool space = false;
         bool sKey = false;
@@ -69,7 +68,7 @@ namespace Tmpl8 {
         bool twoKey = false;
         bool threeKey = false;
 
-        State state = State::Welcome; // game always starts at the welcome screen
+        State state = State::Welcome; // game always starts at the welcome screen. edit this if you want to test certain screens
         bool birdChosen = false;
         int difficulty = 0;
     };
