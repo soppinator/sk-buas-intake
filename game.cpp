@@ -194,7 +194,7 @@ namespace Tmpl8
 		abottom = ay; 
 		atop = abottom + a.GetHeight() - 1; // gets top edge of sprite a
 
-		// compute axis line bounding box for sprite a
+		// compute axis line bounding box for sprite b
 		bleft = bx; 
 		bright = bleft + b.GetWidth() - 1; 
 		bbottom = by; 
