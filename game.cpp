@@ -76,8 +76,8 @@ namespace Tmpl8
 	};
 
 	// CLOUDS
-	Sprite cloudLg(new Surface("assets/cloudlg.png"), 1);
-	Sprite cloudSm(new Surface("assets/cloudsm.png"), 1);
+	Sprite cloudLg(new Surface("assets/cloud1.png"), 1);
+	Sprite cloudSm(new Surface("assets/ogcloud1.png"), 1);
 
 	const cloud smallCloud{ cloudX, cloudY, &cloudLg, cloudBaseSpeed };
 	const cloud largeCloud{ cloudX, cloudY, &cloudSm, cloudBaseSpeed };
@@ -442,3 +442,4 @@ namespace Tmpl8
 		}
 	}
 };
+
